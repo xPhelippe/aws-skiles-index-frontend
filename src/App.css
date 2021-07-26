@@ -1,0 +1,224 @@
+.App {
+  background-color: #1c1c1c;
+}
+
+.App-logo {
+  height: 17vmin;
+  pointer-events: none;
+  margin: 0;
+}
+
+.Help-pages {
+  height: 50vmin;
+  pointer-events: none;
+  margin: 0;
+}
+
+.Mini-aang {
+  height: 4vmin;
+  pointer-events: none;
+  margin: 8px;
+}
+
+.Midi-aang {
+  height: 8vmin;
+  pointer-events: none;
+  margin: 5px;
+}
+
+.Maxi-aang {
+  height: 20vmin;
+  pointer-events: none;
+  margin: 5px;
+}
+
+.Landing-page {
+  height: 50vmin;
+  font-family: "Lucida Console", "Courier New";
+  text-align: center;
+}
+
+.Lucida {
+  font-family: "Lucida Console", "Courier New";
+  text-align: center;
+}
+
+.App-header {
+  background-color: #1c1c1c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Content {
+  background-color: #1c1c1c;
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-family: "Lucida Console", "Courier New";
+  font-weight: bold;
+}
+
+.Header {
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-family: "Lucida Console", "Courier New";
+  font-weight: bold;
+}
+
+.User-logout {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 10px;
+  background-color: #3e444a;
+}
+
+.Sign-up {
+  justify-content: flex-end;
+}
+
+.Nav-bar {
+  background-color: #1c1c1c;
+  color: #61dafb;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.h2 {
+  font-family: "Lucida Console", "Courier New";
+  font-weight: bold;
+  animation: example2 2s ease-out;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.button {
+  font-family: "Lucida Console", "Courier New";
+  font-weight: bold;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.example2 {
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  margin: 0;
+  line-height: 50px;
+  text-align: left;
+  font-size: calc(10px + 1vmin);
+  color: white;
+
+  /* Apply animation to this element */
+  animation: example2 2s ease-out;
+}
+/* Move it (define the animation) */
+@keyframes example2 {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-body {
+  font-family: "Lucida Console", "Courier New";
+  font-weight: bold;
+  color: black;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-user-info {
+  width: 300px;
+  height: 700px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.hvrbox,
+.hvrbox * {
+  box-sizing: border-box;
+}
+.hvrbox {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.hvrbox img {
+  max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+  display: block;
+}
+.hvrbox .hvrbox-layer_top {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 15px;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+  opacity: 1;
+}
+.hvrbox .hvrbox-text {
+  text-align: center;
+  font-family: "Lucida Console", "Courier New";
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
